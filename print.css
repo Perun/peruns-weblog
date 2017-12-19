@@ -1,0 +1,167 @@
+ /*
+Formatierungen fuer die Druckerausgabe
+Author: Vladimir Simovic aka Perun
+Author URI: http://www.perun.net
+Description: <a href="http://www.vlad-design.de">Vladimir Simovic</a> aka <a href="http://www.perun.net">Perun</a>
+*/
+
+/* Algemeine Formatierungen */
+body {
+background: #fff;
+font: 11pt 'times new roman', serif;
+color: #222;
+}
+
+a {
+color:#000;
+}
+
+a:link:after, a:visited:after {
+content: " (" attr(href) ") ";
+font-size: 90%;
+font-style:italic;
+color:#000;
+}
+a[href^="/"]:after {
+content: " (http://www.perun.net" attr(href) ") ";
+}
+
+hr, iframe, .weiter, .nach-oben, .unsichtbar, #technorati, .feedback, .bearbeiten {
+display: none;
+}
+
+ins {
+text-decoration: none;
+border-bottom: 1px dashed #222;
+}
+
+acronym, abbr, dfn {
+border-bottom: 1px dashed #333;
+}
+
+blockquote {
+border-left: 5px solid #ccc;
+margin: 1em 0;
+padding-left: 10px;
+}
+
+img {
+border: none;
+}
+
+pre, code {
+font: 11pt 'courier new', courier, monospace;
+color: #900;
+}
+
+dt {
+font-weight: bold;
+}
+
+dd {
+margin: 0.2cm 0 0.5cm 0;
+}
+
+.bild-links {
+float: left;
+margin: 2px 10px 5px 0;
+}
+
+.bild-rechts {
+float: right;
+margin: 2px 0 5px 10px;
+}
+
+.center {
+text-align: center;
+}
+
+.feedback, .feedback2 {
+    font-style: italic;
+}
+
+h1 {
+font-size: 15pt
+}
+
+/* Ende allgemeine Formatierungen */
+
+/* Navigation */
+#navi {
+display: none;
+}
+/* Ende Navigation */
+
+/* Der Inhalt */
+
+#text-inhalt {
+line-height: 135%;
+width: 99%;
+}
+
+#text-inhalt h2 {
+font: 11pt 'times new roman', serif;
+border-bottom: 1px solid #222;
+text-align: right;
+}
+
+#text-inhalt h2.statisch {
+font: 14pt 'times new roman', serif;
+border-bottom: 1px solid #222;
+text-align: left;
+}
+
+#text-inhalt h3 {
+font: 14pt 'times new roman', serif;
+}
+
+#text-inhalt h3 a {
+color: #222;
+}
+
+#text-inhalt h4 {
+font: 13pt 'times new roman', serif;
+}
+
+#rand #inhalt #text-inhalt h3 a {
+text-decoration: none;
+border: none;
+}
+
+#text-inhalt a {
+color: #00f;
+}
+
+#text-inhalt ul li {
+line-height: 135%;
+margin-bottom: 1px;
+}
+/* Ende Inhalt */
+
+/* Kommentare */
+
+#commentform, h3#postcomment {
+display: none;
+}
+
+ol#commentlist li {
+border-bottom: 1px solid #222;
+}
+
+/* Plugins */
+.ed_button {
+border: 1px solid #ccc;
+background: #f9f9f9;
+color: #369;
+margin-right: 1px;
+}
+
+#wp_grins {
+margin-top: 5px;
+}
+
+/* Infobox und Letzte Eintr&auml;ge */
+
+#eingangsbox {
+display: none;
+}

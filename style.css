@@ -1,0 +1,608 @@
+ /*
+Theme Name: Peruns Weblog
+Theme URI: http://www.wordpress-themes.perun.net
+Description: Das ist das ehemelige WordPress-Theme von Peruns Weblog (<a href="http://www.vlad-design.de">Vladimir Simovic</a> aka <a href="http://www.perun.net">Perun</a>).
+Version: 2.6.1
+Author: Vladimir Simovic (aka Perun)
+Author URI: http://www.vlad-design.de
+Tags: business, white, fixed-width, two-columns, widgets, widget-ready technical, writing
+*/
+
+/* Algemeine Formatierungen */
+body {
+    background: #fff url(grafik/grund1.gif) fixed;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font: 100.01% verdana, sans-serif;
+    color: #444;
+}
+
+hr {
+    display: none;
+}
+
+ins {
+    text-decoration: none;
+    border-bottom: 1px dashed #f60;
+}
+
+acronym, abbr, dfn {
+    border-bottom: 1px dashed #999;
+    font-style: normal;
+    cursor: help;
+}
+
+blockquote {
+    border-left: 5px solid #ccc;
+    margin: 1em 0;
+    padding-left: 10px;
+}
+
+#rand #inhalt img, #rand #inhalt .bild-link, #rand #inhalt .bild-link a {
+    border: none;
+}
+
+pre, code, samp {
+    font: 1em 'courier new', courier, monospace;
+    color: #900;
+}
+small code {
+    font-size: 1.1em;
+}
+
+.pre {
+    white-space: pre;
+    display: block;
+}
+
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 1px 0 .5em 0;
+}
+
+input, textarea {
+    border: 1px solid #ccc;
+    font: 1.1em verdana, sans-serif;
+    background: #f5f5f5;
+    color: #444;
+}
+/* Gehört dazu */
+#searchform #s {
+    background: #fff;
+    margin-bottom: 2px;
+    width: 160px;
+}
+
+.bild-links {
+    float: left;
+    margin: 2px 10px 5px 0;
+}
+
+.bild-rechts {
+    float: right;
+    margin: 2px 0 5px 10px;
+}
+
+.bild-zentriert {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rand #inhalt .bild-verweis, #rand #navi .bild-verweis, #rand #inhalt .bild-verweis a {
+    border-bottom: none;
+}
+
+.bild-mittig {
+    vertical-align: middle;
+}
+
+.nach-oben {
+    text-align: right;
+    margin: 12px 0;
+}
+
+.center {
+    text-align: center;
+}
+.rechts {
+    text-align: right;
+}
+
+.weiter {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.unsichtbar, #technorati {
+    display: none;
+}
+
+.clearer {
+    clear: both;
+}
+.clearer-links {
+    clear: left;
+}
+.fett {
+    font-weight: bold;
+}
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+    height: 162px;
+    background: url(grafik/logo-neu.jpg) no-repeat;
+    position: relative;
+    text-align: left;
+}
+
+/* Ende allgemeine Formatierungen */
+h1 a {
+    /*display: block;
+    height: 150px;*/
+    /* Wenn man die normale Text-Ueberschrift ausblenden und stattdessen eine grafische einfuegen moechte */
+    color: #eee; text-decoration: none;
+    font: 20px arial, sans-serif;
+    text-transform: lowercase;
+    position: absolute; left: 15px; bottom: 45px;
+}
+h1 a span {
+    display: none;
+}
+
+#rand {
+    width: 753px;
+    margin: 0 auto;
+    background: #fff url(grafik/grund-mitte.gif) repeat-y;
+    padding: 0;
+    /*border-bottom: 1px solid #ccc;*/
+}
+
+#inhalt {
+    width: 751px;
+    text-align: left;
+    margin: 0 1px;
+    padding-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Navigation */
+#navi {
+    width: 200px;
+    margin: 0 0 15px 0;
+    float: right;
+    font-size: 75%;
+    color: #666;
+    overflow: hidden;
+}
+
+#navi ul {
+    list-style: none;
+    margin: 5px 10px 1em 10px;
+    padding: 0;
+}
+#navi li {
+    padding: 2px 0 2px 15px;
+    background: url(grafik/bullet.gif) 0 6px no-repeat;
+}
+#navi ul li ul {
+    margin-bottom: .1em;
+}
+
+#navi a {
+    color: #369;
+    text-decoration: none;
+}
+#navi a:hover {
+    color: #f60;
+    background: #fff;
+}
+
+#navi h3 {
+    text-align: left;
+    font: bold 1.1em arial, sans-serif;
+    color: #f93;
+    padding: 0;
+    margin: 1px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#navi form {
+    margin: 10px 0;
+    padding: 0;
+}
+
+#navi div, #navi p {
+    margin: 10px 10px 15px 10px;
+}
+
+#navi div * {
+    margin-left: 0;
+}
+
+
+#navi ul.buttons li {
+    background: none;
+    padding-left: 0;
+}
+
+#navi .werbelinks {
+    /*font-size: .916em;*/
+    font-family: tahoma, arial, verdana, sans-serif;
+}
+
+/* Ende Navigation */
+
+/* Der Inhalt */
+
+#text-inhalt {
+    margin-left: 16px;
+    margin-right: 217px;
+    font-size: 75%;
+    line-height: 1.5;
+}
+
+#text-inhalt .datum {
+    font: bold 1.1em arial, sans-serif;
+    color: #f93;
+    margin: 1px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+}
+
+#text-inhalt h2 {
+    font: 1.6em 'trebuchet ms', arial, sans-serif;
+    color: #369;
+    margin: 1px 0 7px 0;
+    background: #eee /*url(/grafik/titel-grafik.gif) center left no-repeat*/;
+    padding: 0 5px;
+}
+#text-inhalt h3#postcomment {
+    margin-top: 15px;
+}
+
+#text-inhalt .unterseite h3 {
+    margin-top: 1em;
+}
+
+#text-inhalt h3 {
+    font: bold 1.2em arial, sans-serif;
+    margin: 1.5em 0 0 0;
+    padding: 0;
+}
+
+#text-inhalt h4 {
+    font: 1.1em arial, sans-serif;
+    margin: .5em 0;
+}
+
+#rand #inhalt #text-inhalt h2 a {
+    text-decoration: none;
+    border: none;
+}
+
+#text-inhalt a, #footer a {
+    color: #369;
+    text-decoration: none;
+    border-bottom: 1px solid #369;
+}
+#text-inhalt a:visited {
+    color: #369;
+    border-bottom: 1px solid #ddd;
+}
+#text-inhalt a:hover, #footer a:hover {
+    color: #f60;
+    border-bottom: 1px solid #f60;
+}
+
+#text-inhalt li {
+    line-height: 1.6;
+    margin-bottom: 1px;
+}
+
+#text-inhalt .beitrag-hinweis {
+    background: #f9f9f9 url(grafik/beitrag-hinweis.gif) no-repeat right bottom;
+    padding: 12px;
+    border: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+.feedback, .feedback2 {
+    padding: 1px 15px;
+    background: #f5f5f5;
+    font-size: .9em;
+    margin-bottom: 27px;
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+.feedback {
+    padding: 5px 15px;
+}
+.feedback2 p, .feedback2 dl {
+    margin: 10px 0;
+}
+.feedback2 dl dt {
+    float: left;
+    margin-right: 5px;
+    width: 80px;
+}
+.feedback2 dl dd {
+    margin-bottom: 1px;
+}
+
+#text-inhalt .feedback a, #text-inhalt .feedback2 a, #text-inhalt .feedback a:visited, #text-inhalt .feedback2 a:visited  {
+    border-bottom: none;
+    text-decoration: none;
+}
+#text-inhalt .feedback2 a {
+    font-weight: bold;
+}
+
+/* Ende Inhalt */
+
+/* Kommentare */
+ol#commentlist {
+    margin-top: 2em;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#commentlist li h4 {
+    font: bold 1.25em tahoma, sans-serif;
+    /*background: #eee;*/
+    margin-top: 0;
+    margin-bottom: -10px;
+    /*border-top:1px solid #ddd;*/
+    position: relative;
+}
+
+#commentlist li h4 img {
+    position: absolute; top: 1px; right: 0;
+}
+
+#commentlist .kommentar-info {
+   /* background: #eee;*/
+    /*border-bottom:1px solid #ddd;*/
+    /*position: relative;*/
+    margin-bottom: 0;
+}
+#commentlist .kommentar-info a {
+    float: right
+}
+
+#commentlist li h4 a, #commentlist li h4 a:hover, #commentlist li h4 a:visited, #commentlist .kommentar-info a {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+#commentlist li blockquote {
+    margin-left: 15px;
+    /*width: 410px;*/
+    padding: 0 0 0 10px;
+}
+
+#commentlist li blockquote p {
+    width: 410px;
+}
+
+#commentlist li.kommentare {
+    margin-bottom: 15px;
+    /*border-bottom: 20px solid #fff;*/
+    padding: 7px 12px;
+}
+
+#commentlist li.gerade {
+    background: #f3f3f3;
+    border-bottom: 1px solid #D1DCE6; /*#7EA9D3*/;
+    border-top: 1px solid #D1DCE6; /*#7EA9D3*/;
+}
+
+#commentlist li p {
+    /*width: 430px;*/
+    overflow: auto;
+}
+ #commentlist li ol {
+     width: 375px;
+     overflow: auto;
+     margin-left: 0;
+     padding-left: 25px;
+ }
+
+#commentlist li li {
+    border-bottom: none;
+    width: auto;
+}
+
+#commentform input:hover, #commentform input:focus, #commentform textarea:hover, #commentform textarea:focus, #navi form input:hover, #navi form input:focus, #navi form #s:hover, #navi form #s:focus {
+    background: #ff9;
+}
+
+textarea#comment {
+    width: 510px;
+}
+
+#commentlist li.mein-kommentar {
+    background: #ADDCFE; /*#D1DCE6*/
+    border: none;
+}
+
+/* Infobox */
+#infobox {
+    padding: 0;
+    padding-bottom: 1px;
+    border: 1px solid #ddd;
+    margin-bottom: 2em;
+    line-height: 1.6;
+}
+
+#infobox h2 {
+    padding: 2px 15px;
+    margin: 0 0 3px 0;
+    font-weight: bold;
+    font-size: 1em;
+    background: #eee;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#infobox p {
+    margin: 12px 15px;
+    margin-right: 105px;
+    font-size: 11px;
+}
+#infobox img {
+    float: right;
+    margin: 12px 15px 12px 15px;
+}
+
+
+/* Footer */
+#footer {
+    clear: both;
+    border-top: 1px solid #ccc;
+    background: #eee;
+    padding: 5px 15px;
+    /*text-align: center; */
+    font-size: .7em;
+    color: #555;
+}
+#footer a {
+    border: none;
+}
+
+/* Archiv */
+.archiv-liste, .archiv-liste2, .archiv-liste3 {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.archiv-liste li {
+    width: 255px;
+    float: left;
+}
+.archiv-liste2 li {
+    width: 172px;
+    float: left;
+}
+.archiv-liste3 li {
+    display: inline;
+    margin-right: 5px;
+    /*white-space: nowrap;*/
+}
+
+#text-inhalt .archiv-liste li a, #text-inhalt .archiv-liste2 li a, #text-inhalt .archiv-liste li a:visited, #text-inhalt .archiv-liste2 li a:visited, #text-inhalt .archiv-liste3 li a, #text-inhalt .archiv-liste3 li a:visited {
+    border-bottom: none;
+}
+
+/* Plugins */
+
+.smileys {
+    margin-top: 2px;
+}
+#commentform .smileys a {
+    border: none;
+}
+
+#ed_toolbar {
+   /* border-bottom: 1px solid #fff;*/
+}
+
+.ed_button {
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    color: #369;
+    margin-right: 1px;
+}
+
+#wp_grins {
+    margin-top: 5px;
+}
+
+#commentPreview {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 0 5px 5px 5px;
+}
+
+/* Pagebar: */
+#text-inhalt .pagebar {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+#text-inhalt .pagebar a, .pageList .this-page {
+    padding: 2px 6px;
+    border: solid 1px #ddd;
+    background: #fff;
+    text-decoration: none;
+}
+
+.pagebar .break {
+    padding: 2px 6px;
+    border: none;
+    background: #fff;
+    text-decoration: none;
+}
+
+#text-inhalt .pagebar .this-page {
+    padding: 2px 6px;
+    border-color: #999;
+    font-weight: bold;
+    vertical-align: top;
+    background: #fff;
+}
+
+#text-inhalt .pagebar a:hover {
+    color: #fff;
+    background: #369;
+    border-color: #036;
+    text-decoration: none;
+}
+
+/* WordPress 2.6 */
+
+.aligncenter,
+div.aligncenter {
+   display: block; margin-left: auto; margin-right: auto; text-align: center;
+}
+.alignleft {
+   float: left;
+}
+.alignright {
+   float: right;
+}
+
+.wp-caption {
+   text-align: center;
+   background-color: #f9f9f9; border: 1px solid #ccc;
+   padding-top: 4px; margin: 10px;
+   /* optional rounded corners for browsers that support it */
+   -moz-border-radius: 3px; -khtml-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+}
+
+.wp-caption img {
+   margin: 0; padding: 0; border: 0 none;
+}
+
+#text-inhalt div.wp-caption a { border: none; }
+
+.wp-caption p.wp-caption-text {
+   font-size: 11px; line-height: 17px;
+   padding: 0 4px 5px; margin: 0;
+}
