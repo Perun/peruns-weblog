@@ -3,8 +3,8 @@ Theme Name: Peruns Weblog
 Theme URI: http://www.wordpress-themes.perun.net
 Description: Das ist das ehemelige WordPress-Theme von Peruns Weblog (<a href="http://www.vlad-design.de">Vladimir Simovic</a> aka <a href="http://www.perun.net">Perun</a>).
 Version: 2.6.1
-Author: Vladimir Simovic (aka Perun)
-Author URI: http://www.vlad-design.de
+Author: Vladimir Simović (aka Perun)
+Author URI: https://www.vladimir-simovic.de
 Tags: business, white, fixed-width, two-columns, widgets, widget-ready technical, writing
 */
 
@@ -71,7 +71,7 @@ input, textarea {
     background: #f5f5f5;
     color: #444;
 }
-/* Geh�rt dazu */
+/* Gehört dazu */
 #searchform #s {
     background: #fff;
     margin-bottom: 2px;
